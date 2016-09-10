@@ -100,8 +100,12 @@
 
 
 	var input = document.getElementsByTagName("input")[0];
+	var remove = document.getElementsByClassName("remove")[0];
 	input.onchange = change;
-
+	remove.onclick = function(){
+		var img = document.getElementsByTagName("img")[0];
+		img.src = "./img/default.jpg";
+	}
 
 
 
